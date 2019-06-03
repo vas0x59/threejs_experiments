@@ -81,6 +81,6 @@ function gen_city() {
     // console.log(builds)
     var objs = []
     objs.push(draw_builds(builds))
-    objs.push(draw_parks(parks))
+    // objs.push(draw_parks(parks))
     return objs
 }

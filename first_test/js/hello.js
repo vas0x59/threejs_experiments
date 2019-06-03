@@ -3,9 +3,10 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 scene.background = new THREE.Color( 0xcccccc );
-scene.fog = new THREE.FogExp2( 0xcccccc, 0.008 );
+scene.fog = new THREE.FogExp2( 0xcccccc, 0.0095 );
+// scene.fog = new THREE.Fog( 0xcccccc, 0.01, 0.5 );
 
-var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.3 );
+var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.08 );
 var targetObject = new THREE.Object3D();
 // directionalLight.rotation.z += 90
 // directionalLight.target.
@@ -30,7 +31,7 @@ directionalLight.shadow.camera.far = 500;
 // var light = new THREE.DirectionalLight( 0x0044aa );
 // light.position.set( - 1, - 1, - 1 );
 // scene.add( light );
-var light = new THREE.AmbientLight( 0xffffff, 1.5 );
+var light = new THREE.AmbientLight( 0xffffff, 1.6 );
 
 scene.add( light );
 
